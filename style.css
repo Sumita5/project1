@@ -55,6 +55,13 @@ section{
     font-weight: bold;
     background-image: linear-gradient(45deg, lightSalmon, tomato);
 }
+.link-button:hover {
+    color: black;
+    background-image: linear-gradient(45deg, tomato, lightSalmon);
+}
+.link-button:active {
+    color: blue;
+}
 .dream-area{
     background-image: url("images/biography-bg.png");
     background-repeat: no-repeat;
@@ -78,10 +85,19 @@ section{
     width: 30%;    
     padding-left: 2%;
     margin-top: 5%;    
+        
 }
 .column img{
     width: 100%;
+    transition: all 1s ease;
 }
+
+.column img:hover {
+    width: 125%;
+    height: auto;
+    transform: rotate(10deg);    
+}
+
 .bottom-banner {
     text-align: center;
     background-image: url("images/footer-bg.png");
